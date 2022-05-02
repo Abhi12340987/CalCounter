@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8BC34A"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="261dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/title_text"
+        android:textAlignment="center"
+        android:textColor="#ff3a382f"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="173dp"
+        android:layout_height="162dp"
+        android:src="@drawable/apple_on_a_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="367dp"
+
+        android:layout_height="252dp"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.085">
+
+
+        <EditText
+            android:id="@+id/foodEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="18dp"
+            android:hint="@string/hint_food"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/caloriesEditText"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_calories"
+            android:inputType="number"
+            android:layout_marginLeft="50dp"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/submit_text" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
